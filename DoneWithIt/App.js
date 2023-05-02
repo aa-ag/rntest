@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text numberOfLines={1}>Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! testing testing testing. Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! helloooooooo</Text>
+      <Text numberOfLines={1} onPress={() => console.log("clicked!")}>Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! testing testing testing. Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! helloooooooo</Text>
       <StatusBar style="auto" />
     </View>
   );
