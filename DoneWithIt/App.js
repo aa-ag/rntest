@@ -5,11 +5,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Testing Images</Text>
-      <Image source={{ 
-        width: 200,
-        height: 200,
-        uri: "https://picsum.photos/id/237/200/300" }
-        } />
+      <Image style={{ width: 100, height: 80 }} source={require("./assets/icon.png")} />
     </SafeAreaView>
   );
 }
