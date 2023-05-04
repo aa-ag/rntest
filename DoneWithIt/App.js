@@ -1,13 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
+import { Button } from "react-native-web";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Testing Images</Text>
-      <TouchableWithoutFeedback onPress={() => console.log("working!")}>
-        <Image style={{ width: 100, height: 80 }} source={require("./assets/icon.png")} />
-      </TouchableWithoutFeedback>
+      <Button title="Eggs" onPress={() => window.open("https://www.google.com/search?q=price+of+a+dozen+eggs+near+me")} />
     </SafeAreaView>
   );
 }
