@@ -1,6 +1,5 @@
 import React from "react";
-import { StyleSheet, SafeAreaView } from 'react-native';
-import { Button } from "react-native-web";
+import { StyleSheet, SafeAreaView, Button, Alert } from 'react-native';
 
 export default function App() {
   return (
@@ -8,7 +7,7 @@ export default function App() {
       <Button
         color="orange"
         title="Eggs"
-        onPress={() => window.open("https://www.google.com/search?q=price+of+a+dozen+eggs+near+me")} 
+        onPress={() => alert("working!")}
       />
     </SafeAreaView>
   );
