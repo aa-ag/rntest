@@ -5,9 +5,10 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Button
-        color="orange"
         title="Eggs"
-        onPress={() => alert("working!")}
+        onPress={() => 
+          Alert.alert("hey")
+        }
       />
     </SafeAreaView>
   );
