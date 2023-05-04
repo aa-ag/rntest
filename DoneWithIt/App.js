@@ -1,11 +1,15 @@
-import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Testing Images</Text>
-      <Image source={require("./assets/icon.png")} />
+      <Image source={{ 
+        width: 200,
+        height: 200,
+        uri: "https://picsum.photos/id/237/200/300" }
+        } />
     </SafeAreaView>
   );
 }
@@ -13,8 +17,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
