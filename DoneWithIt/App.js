@@ -7,7 +7,10 @@ export default function App() {
       <Button
         title="Eggs"
         onPress={() => 
-          Alert.alert("hey")
+          Alert.alert("Alert title", "Alert message", [
+            { text: "Option 1"},
+            { text: "Option 2"},
+          ])
         }
       />
     </SafeAreaView>
