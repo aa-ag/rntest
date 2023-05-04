@@ -5,7 +5,11 @@ import { Button } from "react-native-web";
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Button title="Eggs" onPress={() => window.open("https://www.google.com/search?q=price+of+a+dozen+eggs+near+me")} />
+      <Button
+        color="orange"
+        title="Eggs"
+        onPress={() => window.open("https://www.google.com/search?q=price+of+a+dozen+eggs+near+me")} 
+      />
     </SafeAreaView>
   );
 }
