@@ -8,8 +8,8 @@ export default function App() {
         title="Eggs"
         onPress={() => 
           Alert.alert("Alert title", "Alert message", [
-            { text: "Scrambled"},
-            { text: "Sunny-Side-Up"},
+            { text: "Yes", onPress: () => console.log("YESSS")},
+            { text: "No", onPress: () => console.log("NOOOO")},
           ])
         }
       />
