@@ -1,6 +1,8 @@
 import React from "react";
 import { StyleSheet, SafeAreaView, Button, Alert } from 'react-native';
 
+require('dotenv').config()
+
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
