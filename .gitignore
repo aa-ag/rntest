@@ -2,7 +2,7 @@
 gitme.sh
 .DS_Store
 .env
-
+.png
 node_modules/
 .expo/
 dist/
