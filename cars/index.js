@@ -1,5 +1,11 @@
-import { AppRegistry } from "react-native-web";
-import App from "./App";
-import { name as appName } from "./app.json"
+// imports
+import React from "react";
+import { Text, AppRegistry } from "react-native";
 
-AppRegistry.registerComponent(appName, () => App);
+// components
+const App = () => {
+    return <Text> This is a component </Text>;
+};
+
+// render components
+AppRegistry.registerComponent('rntest/cars', () => App);
